@@ -55,10 +55,10 @@ echo zenbuild
 if [ ! -f extra/src/zenbuild/zenbuild.sh ] ; then
 	mkdir -p extra/src
 	rm -rf extra/src/zenbuild
-	git clone https://github.com/gpac/zenbuild extra/src/zenbuild
+	git clone https://github.com/gpac/zenbuild -b master extra/src/zenbuild
 	pushd extra/src/zenbuild
-	git checkout 20816630da5b3
-	patch -p1 < ../../patches/gpac_01_revision.diff
+	git  pull
+	#patch -p1 < ../../patches/gpac_01_revision.diff
 	#patch -p1 < ../../patches/ffmpeg_01_version.diff
 	popd
 fi
