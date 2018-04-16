@@ -26,6 +26,14 @@ If you want to use the make build system, the dependencies for Signals need to b
 
 ### Dependencies
 
+On Linux, you will need to have the sgml packages installed first,otherwise the build will fail.
+
+On Ubuntu, for instance, satisfy this dependency with:
+
+```
+sudo apt install sgml*
+```
+
 To do that, simply run the following script :
 ```
 $ ./extra.sh
